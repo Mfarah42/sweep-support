@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sweep · Privacy Policy</title>
+<meta name="description" content="Sweep privacy policy. Your parked spot never leaves your phone — no account, no analytics, no tracking. Location is used once, on-device, when you park.">
+<meta name="referrer" content="no-referrer">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#F6F2EA" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1B1915" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/png" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..600&display=swap">
+<link rel="stylesheet" href="shared.css">
+<script src="shared.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#policy">Skip to policy</a>
+<nav aria-label="Site">
+  <div class="nav-inner">
+    <a class="nav-name serif" href="index.html"><img src="icon.png" alt="" width="24" height="24"><span>Sweep<span class="dot">.</span></span></a>
+    <div class="nav-links">
+      <a href="index.html#faq" class="collapse">FAQ</a>
+      <a href="index.html#contact" class="collapse">Contact</a>
+      <a href="index.html">Support</a>
+      <button id="themeBtn" class="theme-btn" type="button" aria-label="Switch theme" title="Theme: follows your system"><span id="themeIcon" aria-hidden="true">◐</span></button>
+      <a class="nav-cta" href="mailto:farahmo242@gmail.com">Email support</a>
+    </div>
+  </div>
+</nav>
+
+<header class="wrap">
+  <span class="eyebrow">Privacy · Sweep for iOS</span>
+  <h1 class="serif">Your spot never <em>leaves your phone</em>.</h1>
+  <p class="lede">Sweep works out where you parked, on your phone, and keeps it there. There is no account, no analytics, no advertising, and no tracking. We operate no servers and receive no personal data from the app.</p>
+  <p class="updated" style="margin-top:18px">Last updated: September 1, 2026</p>
+</header>
+
+<section class="wrap" id="policy">
+  <div class="prose" data-reveal>
+    <div class="summary-box" aria-label="Summary">
+      <ul>
+        <li>Location is used once, when you park, entirely on your device. It is never transmitted.</li>
+        <li>Notifications, widgets, and the Live Activity are scheduled and rendered locally.</li>
+        <li>The only network request is a weekly schedule-freshness check against a static file.</li>
+        <li>No account, no analytics, no third-party SDKs. Purchases are handled by Apple.</li>
+      </ul>
+    </div>
+
+    <h2 class="serif">Location</h2>
+    <p>When you tell Sweep you've parked, it takes a single location fix to find your block and side of the street. That fix is matched against the street-sweeping schedule <strong>on your device</strong> and is used for nothing else. It is not sent to us or to anyone. Sweep does not run in the background to follow you, and it does not keep a location history; the parked spot is stored on your phone only for as long as the car is parked there.</p>
+    <p>Sweep asks for <strong>Precise Location</strong> because block-finding needs to tell one curb from the next, which approximate location cannot do. The request is temporary and covers only the moment you park. You may decline location access entirely and search for your block by street name and door number instead — every verdict and every alert works the same way.</p>
+
+    <h2 class="serif">Notifications</h2>
+    <p>The evening-before heads-up, the two-hour warning, the thirty-minute last call, the lock-screen Live Activity, and any garbage-day reminders are all scheduled locally on your device. No push server is involved and no notification content ever leaves your phone.</p>
+
+    <h2 class="serif">Reminders</h2>
+    <p>If you turn on the optional Reminders mirror, Sweep writes your sweep alerts into Apple's Reminders app using Apple's EventKit framework, and removes or updates them when you move the car. This happens only if you enable it and grant Reminders access. The entries stay in your Reminders app, under your Apple account and Apple's own privacy terms; we never see them.</p>
+
+    <h2 class="serif">Purchases</h2>
+    <p>Sweep Plus is a one-time purchase handled entirely by Apple through StoreKit. Apple processes the payment and holds the receipt. We receive no name, email, address, or payment details — only an anonymous confirmation, on your device, that Plus is unlocked. Restoring a purchase works the same way.</p>
+
+    <h2 class="serif">Schedule updates</h2>
+    <p>The full San Francisco and Oakland schedules ship inside the app, so Sweep works with no connection at all. To catch changes the cities publish, the app checks roughly once a week for a fresher copy by fetching a small static index file (and, if it has changed, a new schedule file) hosted on GitHub. That request carries no account, device identifier, location, or parked spot — only what any ordinary HTTP request carries, such as your IP address, which GitHub handles under <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's privacy statement</a>. We do not receive or log it.</p>
+    <p>The check runs as a background refresh task. If you would rather the app never talk to the network, turn off Background App Refresh for Sweep in iOS Settings; the app keeps working from the schedules it already has.</p>
+
+    <h2 class="serif">Analytics and accounts</h2>
+    <p>None. Sweep contains no analytics, no crash-reporting service, no advertising, no tracking, and no third-party SDKs. There is no account to create and no login. We cannot see how you use the app, and we would not want to.</p>
+
+    <h2 class="serif">Children</h2>
+    <p>Sweep collects no data from anyone, including children. It is rated 4+ on the App Store.</p>
+
+    <h2 class="serif">This website</h2>
+    <p>This support site is a set of static pages. It sets no cookies and runs no analytics or tracking scripts. The only preference it keeps is your light/dark theme choice, stored in your own browser and never sent anywhere. The site loads its display typeface from Google Fonts, which is subject to <a href="https://policies.google.com/privacy">Google's privacy policy</a>.</p>
+
+    <h2 class="serif">Changes</h2>
+    <p>If this policy changes, the new version will be posted here with an updated "Last updated" date at the top of the page.</p>
+
+    <h2 class="serif">Contact</h2>
+    <p>If you have any questions about this privacy policy or about how Sweep handles your data, write to <a href="mailto:farahmo242@gmail.com">farahmo242@gmail.com</a>.</p>
+  </div>
+</section>
+
+<div class="wrap">
+  <footer>
+    <span>© 2026 Mohamed Farah · <a href="index.html">Support</a></span>
+    <span class="serif" style="font-style:italic">Signs beat data. Always check the posted sign.</span>
+  </footer>
+</div>
+</body>
+</html>

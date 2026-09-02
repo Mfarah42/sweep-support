@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sweep · Support</title>
+<meta name="description" content="Support and FAQ for Sweep, the street-sweeping parking guardian for San Francisco and Oakland. One glance: Safe, Move soon, or Sweeping now. Fully offline, no data collected.">
+<meta name="referrer" content="no-referrer">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#F6F2EA" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1B1915" media="(prefers-color-scheme: dark)">
+<meta property="og:title" content="Sweep · Support">
+<meta property="og:description" content="Is my car safe where it's parked? Support and FAQ for the Sweep iOS app — street sweeping alarm for SF and Oakland.">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..600&display=swap">
+<link rel="stylesheet" href="shared.css">
+<link rel="stylesheet" href="phone.css">
+<script src="shared.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Sweep — Street Sweeping Alarm",
+  "applicationCategory": "NavigationApplication",
+  "operatingSystem": "iOS",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+}
+</script>
+<!-- TODO: once the App Store listing is live, add its URL as "url" in the JSON-LD above
+     and replace every href="#" marked data-todo="appstore" below. -->
+</head>
+<body>
+<a class="skip" href="#faq">Skip to FAQ</a>
+<nav aria-label="Site">
+  <div class="nav-inner">
+    <a class="nav-name serif" href="#top"><img src="icon.png" alt="" width="24" height="24"><span>Sweep<span class="dot">.</span></span></a>
+    <div class="nav-links">
+      <a href="#faq" class="collapse">FAQ</a>
+      <a href="#contact" class="collapse">Contact</a>
+      <a href="mailto:farahmo242@gmail.com" class="collapse">Email</a>
+      <a href="privacy.html">Privacy</a>
+      <button id="themeBtn" class="theme-btn" type="button" aria-label="Switch theme" title="Theme: follows your system"><span id="themeIcon" aria-hidden="true">◐</span></button>
+      <!-- TODO: App Store URL not known yet -->
+      <a class="nav-cta" href="#" data-todo="appstore" aria-disabled="true" title="App Store listing coming soon">App&nbsp;Store</a>
+    </div>
+  </div>
+</nav>
+
+<header class="wrap" id="top">
+  <div class="hero-grid">
+    <div>
+      <span class="eyebrow">Support · Sweep for iOS</span>
+      <h1 class="serif">Is my car <em>safe</em> where it's parked?</h1>
+      <p class="lede">Sweep answers with one glance — <strong>Safe</strong>, <strong>Move soon</strong>, or <strong>Sweeping now</strong> — and a countdown to the next sweep on your block, on your side of the street. San Francisco and Oakland, fully offline, nothing collected.</p>
+      <div class="verdicts" aria-label="The three verdicts">
+        <span class="verdict safe">Safe</span>
+        <span class="verdict soon">Move soon</span>
+        <span class="verdict now">Sweeping now</span>
+      </div>
+      <div class="btn-row">
+        <!-- TODO: App Store URL not known yet -->
+        <a class="btn btn-clay" href="#" data-todo="appstore" aria-disabled="true" title="App Store listing coming soon">Download on the App&nbsp;Store</a>
+        <a class="btn btn-ghost" href="mailto:farahmo242@gmail.com">Email support</a>
+        <a class="btn btn-ghost" href="privacy.html">Privacy policy</a>
+      </div>
+      <div class="hero-note">
+        <img src="icon.png" alt="Sweep app icon" width="40" height="40">
+        <span>Questions, feedback, and bug reports usually get a reply within a day.</span>
+      </div>
+    </div>
+    <div class="phone-slot">
+      <div class="phone" aria-hidden="true">
+        <div class="phone-notch"></div>
+        <div class="phone-screen">
+          <div class="sw-notif">
+            <img src="icon.png" alt="" width="26" height="26">
+            <div><b>Parked on Grand Ave</b><span>Lake side · safe until Monday 2 AM</span></div>
+            <em>now</em>
+          </div>
+
+          <div class="sw-top">
+            <b class="serif">Sweep<i>.</i></b>
+            <span>OAKLAND · GRAND LAKE</span>
+          </div>
+
+          <div class="sw-card">
+            <span class="sw-pill"><i></i>SAFE</span>
+            <b class="serif sw-headline">Safe until Monday 2 AM</b>
+            <span class="sw-where"><b>Grand Ave</b> · lake side · sweep in <span id="swCountdown">37h 3m</span></span>
+            <span class="sw-sched">Mon, Wed &amp; Fri, 2 AM–3 AM · every week</span>
+            <span class="sw-note">Always check the posted sign.</span>
+          </div>
+
+          <div class="sw-section">
+            <div class="sw-section-head"><span>REMINDERS</span><em>3 SET</em></div>
+            <div class="sw-rows">
+              <div class="sw-row"><i class="sw-ic">✓</i><div class="sw-txt"><b>Evening before</b><span>Heads-up so you can plan</span></div><span class="sw-when">Sun 8:00 PM</span></div>
+              <div class="sw-row"><i class="sw-ic">✓</i><div class="sw-txt"><b>Two hours before</b><span>Time to find a new spot</span></div><span class="sw-when">Mon 12:00 AM</span></div>
+              <div class="sw-row"><i class="sw-ic">✓</i><div class="sw-txt"><b>Last call</b><span>Thirty minutes out</span></div><span class="sw-when">Mon 1:30 AM</span></div>
+            </div>
+          </div>
+
+          <div class="sw-section">
+            <div class="sw-section-head"><span>COMING UP</span></div>
+            <div class="sw-rows">
+              <div class="sw-row"><i class="sw-ic next">→</i><div class="sw-txt"><b>Lake side sweeps</b><span>Grand Ave · your side</span></div><span class="sw-when">Mon 2–3 AM</span></div>
+              <div class="sw-row"><i class="sw-ic soft">·</i><div class="sw-txt"><b>Hills side sweeps</b><span>Grand Ave · across the street</span></div><span class="sw-when">Tue 2–3 AM</span></div>
+            </div>
+          </div>
+
+          <div class="sw-actions">
+            <span class="sw-btn fill">I moved the car</span>
+            <span class="sw-btn ghost">Sign says otherwise?<i>fix this block</i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ================= FEATURES ================= -->
+<section id="features" class="wrap">
+  <div class="section-head" data-reveal>
+    <span class="eyebrow">How it works</span>
+    <h2 class="serif">Tell it once. It watches the schedule so you don't have to.</h2>
+    <p>Sweep is a street-sweeping parking guardian for San Francisco and Oakland. Every ticket-saving alert is free, forever.</p>
+  </div>
+  <div class="grid" data-reveal-group>
+    <div class="card">
+      <span class="chip">Park</span>
+      <h3 class="serif">One tap when you park</h3>
+      <p>Tap <b>I just parked</b>. Sweep finds your block from a single location fix and asks at most one friendly question: which side of the street. It describes sides by the view or the door numbers — <b>never compass directions</b>.</p>
+    </div>
+    <div class="card">
+      <span class="chip safe">Verdict</span>
+      <h3 class="serif">One-glance answer</h3>
+      <p><b>Safe</b>, <b>Move soon</b>, or <b>Sweeping now</b>, with a countdown to the next sweep on your block and your side. The schedule and the move-by time sit right underneath, in plain words.</p>
+    </div>
+    <div class="card">
+      <span class="chip">Alerts</span>
+      <h3 class="serif">Wakes you before the sweeper</h3>
+      <p>An <b>evening-before heads-up</b>, a <b>two-hour warning</b>, and a <b>last call thirty minutes out</b>. A lock screen Live Activity counts down the final hours, and an optional all-clear tells you when sweeping has ended.</p>
+    </div>
+    <div class="card">
+      <span class="chip">Widgets</span>
+      <h3 class="serif">Home and lock screen widgets</h3>
+      <p>The verdict and countdown at a glance, without opening the app. Small, medium, and lock-screen sizes follow whichever curb-card theme you've picked.</p>
+    </div>
+    <div class="card">
+      <span class="chip">Offline</span>
+      <h3 class="serif">Works with zero signal</h3>
+      <p>The full San Francisco and Oakland schedules ship inside the app. Verdicts and alarms work in a parking garage, in airplane mode, anywhere. The only thing Sweep ever fetches is a weekly schedule-freshness check.</p>
+    </div>
+    <div class="card">
+      <span class="chip safe">Private</span>
+      <h3 class="serif">Your spot never leaves your phone</h3>
+      <p>No account, no tracking, no analytics, no third-party SDKs. Location is used once, on-device, when you park — and you can skip it and search by street name instead.</p>
+      <a class="applink" href="privacy.html">Read the privacy policy →</a>
+    </div>
+    <div class="card">
+      <span class="chip">Signs beat data</span>
+      <h3 class="serif">Sign says otherwise?</h3>
+      <p>City data lags the street. If the posted sign disagrees with the app, tap <b>Sign says otherwise?</b> and tell Sweep once. Your block is corrected on your phone, and every alert follows the sign from then on.</p>
+    </div>
+    <div class="card">
+      <span class="chip">Extras</span>
+      <h3 class="serif">Reminders and bins, if you want them</h3>
+      <p>Optionally mirror the move-by deadline into <b>Apple Reminders</b>, and set a weekly <b>garbage day</b> for a bins-out reminder the evening before with a 7 AM nudge. Both are off until you turn them on.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PLUS ================= -->
+<section id="plus" class="wrap">
+  <div class="panel plus" data-reveal>
+    <div>
+      <span class="eyebrow">Sweep Plus</span>
+      <h3 class="serif">The extras, for the price of a coffee. Once.</h3>
+      <p>Sweep Plus is a <b>one-time purchase</b> — not a subscription, no renewals, nothing recurring. Buy it once and it's yours on every device signed in to your Apple account.</p>
+      <p class="price"><b>$3</b> one time, forever</p>
+      <div class="free-note"><b>Every ticket-saving alert is free forever.</b> The verdict, the countdown, all three reminders, the Live Activity, widgets, and "Sign says otherwise?" never move behind Plus. That never changes.</div>
+    </div>
+    <ul>
+      <li><span><b>A second car.</b> Track two parked cars at once, each with its own block, side, and reminders.</span></li>
+      <li><span><b>Curb-card themes.</b> Almanac is free for everyone; Plus adds <b>Harbor</b> (cool neutrals, coral accent) and <b>Ember</b> (warm adobe tones). Widgets follow along.</span></li>
+      <li><span><b>Longest Spot.</b> Finds the nearby block you can stay on longest before the next sweep — handy when you're parking for the weekend.</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section id="faq" class="wrap">
+  <div class="section-head" data-reveal>
+    <span class="eyebrow">FAQ</span>
+    <h2 class="serif">Frequently asked</h2>
+    <p>The questions that come up most, answered the way the app answers them: plainly.</p>
+  </div>
+  <div class="faq-list" data-reveal-group>
+    <details>
+      <summary class="serif">How does Sweep know my block?</summary>
+      <div class="answer">
+        <p>When you tap <b>I just parked</b>, Sweep takes a single location fix and matches it against the city's street-sweeping map, which ships inside the app. It snaps you to the nearest block segment and works out which curb you're on. Nothing is sent anywhere; the matching happens on your phone.</p>
+        <p>GPS can drift indoors or when Precise Location is off. If the block Sweep picked looks wrong, tap it to search by street name and door number instead — for example, <i>1935 Lakeshore Ave</i>.</p>
+      </div>
+    </details>
+    <details>
+      <summary class="serif">Why did it ask which side of the street?</summary>
+      <div class="answer">
+        <p>Because the two sides of a block often sweep on different days, and a location fix can't reliably tell a curb from the one across the street. When the sides differ, Sweep asks once — and it describes them by what you can see or by the door numbers ("Lake side · theater marquee up the street", "odd numbers"), never by compass directions. If both sides share a schedule, it doesn't ask at all.</p>
+      </div>
+    </details>
+    <details>
+      <summary class="serif">What if the posted sign disagrees with the app?</summary>
+      <div class="answer">
+        <p><b>Trust the sign.</b> Signs are what enforcement goes by, and they can change faster than the city's published data. Then tell Sweep: tap <b>Sign says otherwise?</b> on the verdict card, enter what the sign says, and <b>Save what the sign says</b>. Your block is corrected on your phone, alerts are rescheduled to match, and the correction sticks the next time you park there.</p>
+        <p>If you can, email a photo of the sign and the cross streets to <a href="mailto:farahmo242@gmail.com">farahmo242@gmail.com</a> so the underlying data can be checked too.</p>
+      </div>
+    </details>
+    <details>
+      <summary class="serif">Does it work offline, or in a parking garage?</summary>
+      <div class="answer">
+        <p>Yes. The complete San Francisco and Oakland schedules are inside the app, and every verdict, countdown, and reminder is computed and scheduled locally. Airplane mode, no signal, underground — all fine. The one thing that needs a connection is finding your block from GPS, and a garage can defeat that; use the street-name search instead.</p>
+      </div>
+    </details>
+    <details>
+      <summary class="serif">Why didn't I get a notification?</summary>
+      <div class="answer">
+        <p>A few things to check, in order:</p>
+        <ul>
+          <li><b>Permission.</b> In iOS Settings → Notifications → Sweep, make sure Allow Notifications is on and alerts are set to show on the lock screen.</li>
+          <li><b>Time Sensitive.</b> Sweep's warnings are marked Time Sensitive so they can break through Focus modes. That switch lives in the same Settings screen; if it's off, a Sleep or Do Not Disturb Focus will hold the alert until the Focus ends — which for a 2 AM sweep is too late.</li>
+          <li><b>Focus modes.</b> If Time Sensitive is off and you'd rather keep it that way, add Sweep to the allowed apps of your Sleep Focus.</li>
+          <li><b>The reminder itself.</b> In Sweep → Settings → Reminders, each alert (evening before, two hours, thirty minutes, all clear) has its own toggle.</li>
+          <li><b>You moved the car.</b> Tapping <b>I moved the car</b> cancels every pending alert for that spot, as it should.</li>
+        </ul>
+        <p>If all of that looks right and an alert still didn't fire, email the date, the block, and your iOS version — that combination usually pins it down.</p>
+      </div>
+    </details>
+    <details>
+      <summary class="serif">Which cities does Sweep cover?</summary>
+      <div class="answer">
+        <p><b>San Francisco</b> (SFMTA street-sweeping schedule data) and <b>Oakland</b> (City of Oakland GIS). Switch cities in Sweep → Settings → City; switching clears the current parked spot. Other Bay Area cities publish their sweeping data in very different shapes, so they're evaluated one at a time — if you'd like yours next, say so by email.</p>
+      </div>
+    </details>
+    <details>
+      <summary class="serif">Does Sweep track me?</summary>
+      <div class="answer">
+        <p>No. Location is read once, when you park, and only to find the block. Sweep doesn't run location in the background, keeps no history, and has no account, analytics, or third-party SDKs. The only network request the app ever makes is a weekly check for a fresher schedule file — a request that carries no identifier and no location. Your parked spot never leaves the phone.</p>
+        <a class="applink" href="privacy.html">Read the full privacy policy →</a>
+      </div>
+    </details>
+    <details>
+      <summary class="serif">What's in Sweep Plus? Is it a subscription?</summary>
+      <div class="answer">
+        <p><b>Not a subscription.</b> Sweep Plus is a single $3 purchase that unlocks a second car, the Harbor and Ember curb-card themes, and Longest Spot. Everything that saves you a ticket — the verdict, the countdown, all reminders, the Live Activity, widgets, and sign corrections — is free for everyone and always will be.</p>
+      </div>
+    </details>
+    <details>
+      <summary class="serif">How do I restore a purchase on a new phone?</summary>
+      <div class="answer">
+        <p>Sign in to the same Apple account you bought Plus with, then open Sweep → Settings → Sweep Plus → <b>Restore purchases</b>. Apple confirms the purchase and Plus unlocks on the spot. Because it's a non-consumable purchase, it also works on any other device on the same Apple account, including with Family Sharing if you've enabled it for the app.</p>
+      </div>
+    </details>
+    <details>
+      <summary class="serif">How is the schedule kept up to date? What about holidays?</summary>
+      <div class="answer">
+        <p>The schedules are rebuilt from the cities' published data every week. Sweep checks about once a week for a fresher copy, downloads it in the background, verifies it, and reschedules your reminders if anything changed. You can see the date of the data you're running under Sweep → Settings → About the data.</p>
+        <p><b>Holidays</b> are handled per city, because the rules differ: San Francisco suspends sweeping only on New Year's Day, Thanksgiving, and Christmas, while Oakland suspends on all observed city holidays. Sweep folds those into the countdown so a holiday week doesn't wake you for a sweep that isn't happening. Holiday calendars are reviewed yearly — and as always, the posted sign and any temporary "no parking" notices win.</p>
+      </div>
+    </details>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="wrap">
+  <div class="section-head" data-reveal>
+    <span class="eyebrow">Contact</span>
+    <h2 class="serif">Need a hand?</h2>
+  </div>
+  <div class="panel" data-reveal>
+    <p><span class="pulse"></span><b>Support is one email away</b></p>
+    <p style="color:var(--ink2); max-width:68ch; margin-top:12px">For questions, feedback, or bug reports, write to <a href="mailto:farahmo242@gmail.com">farahmo242@gmail.com</a>. You'll usually hear back within a day. If it's about a block or a missed alert, include the street, the cross streets, which side you were on, and your iOS version — it makes the fix faster.</p>
+    <p class="stamp">Made by <a href="https://simplemaf.com">SimpleMAF</a> · Updated September 2026</p>
+  </div>
+  <div class="disclaimer" data-reveal style="margin-top:28px">
+    <b>Not affiliated.</b> Sweep is an independent app and is not affiliated with, endorsed by, or connected to the San Francisco Municipal Transportation Agency (SFMTA) or the City of Oakland. Schedule data comes from the cities' public datasets and may lag what's on the street. <b>Posted signs are authoritative</b> — always check the sign before you walk away.
+  </div>
+</section>
+
+<div class="wrap">
+  <footer>
+    <span>© 2026 Mohamed Farah · <a href="privacy.html">Privacy Policy</a></span>
+    <span class="serif" style="font-style:italic">Signs beat data. Always check the posted sign.</span>
+  </footer>
+</div>
+</body>
+</html>
