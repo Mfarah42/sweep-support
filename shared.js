@@ -110,8 +110,9 @@ document.documentElement.classList.add("js");
     fit();
     addEventListener("resize", fit);
 
-    /* the "parked" banner slides in once the phone is on screen */
-    slot.setAttribute("data-reveal", "");
+    /* the "parked" banner slides in once the phone is on screen. The phone
+       itself is never hidden — only the banner keys off .in — so a missed
+       intersection (mobile, reduced-motion, old Safari) can't blank it. */
     if (typeof IntersectionObserver === "function") {
       var io = new IntersectionObserver(
         function (entries, obs) {

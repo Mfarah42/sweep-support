@@ -199,7 +199,7 @@ h1 em { font-style: italic; color: var(--clay); }
 .verdict.now  { --c: var(--rust); }
 
 /* ================= Sections ================= */
-section { padding: 0 0 84px; scroll-margin-top: 68px; }
+section, section.wrap { padding-bottom: 84px; scroll-margin-top: 68px; }
 .section-head { margin-bottom: 30px; max-width: 64ch; }
 h2 { font-size: clamp(25px, 3.7vw, 33px); font-weight: 500; letter-spacing: -0.018em; margin-top: 7px; }
 .section-head p { color: var(--ink2); margin-top: 9px; }
@@ -360,5 +360,5 @@ html.js [data-reveal].in { opacity: 1; transform: none; }
 
 @media (max-width: 560px) {
   header { padding: 48px 0 40px; }
-  section { padding: 0 0 64px; }
+  section, section.wrap { padding-bottom: 64px; }
 }
